@@ -18,6 +18,7 @@ export default ({ children }) => {
       />
       <main sx={{ color: "text" }}>
         <Helmet>
+          <title>Thew Dhanat</title>
           <link
             href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
             rel="stylesheet"
