@@ -37,6 +37,7 @@ export default ({ title, description }) => {
         name="twitter:creator"
         content={data.site.siteMetadata.twitterUsername}
       />
+      <meta name="google-site-verification" content="Nd-_fi3Vz-lNPcX7RZUU5Ywms-T4DxmCRO0KJaM16IA" />
     </Helmet>
   );
 };
