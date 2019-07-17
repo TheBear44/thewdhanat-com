@@ -3,9 +3,12 @@ import { jsx, Layout } from "theme-ui";
 import { Helmet } from "react-helmet";
 import { Global } from "@emotion/core";
 
-export default ({ children }) => {
+import SEO from "./SEO";
+
+export default ({ title, description, children }) => {
   return (
     <Layout>
+      <SEO title={title} description={description} />
       <Global
         styles={{
           "*": {
@@ -16,14 +19,13 @@ export default ({ children }) => {
           }
         }}
       />
-      <main sx={{ color: "text" }}>
-        <Helmet>
-          <title>Thew Dhanat</title>
-          <link
-            href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
+      <main sx={{ color: "text", paddingX: "7%", paddingTop: "7%" }}>
         {children}
       </main>
     </Layout>
