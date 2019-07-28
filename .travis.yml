@@ -6,6 +6,9 @@ install:
 node_js:
 - lts/*
 - node
+branches:
+  except:
+  - /^dependabot\/.*$/
 script:
 - npm test
 - npm run build
