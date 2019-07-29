@@ -9,6 +9,7 @@ node_js:
 branches:
   except:
   - /^dependabot\/.*$/
+if: tag IS blank
 script:
 - npm test
 - npm run build
