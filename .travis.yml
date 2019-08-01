@@ -1,8 +1,8 @@
 dist: bionic
 language: node_js
 install:
-  - for dir in plugins/*/; do (cd $dir && npm install); done
-  - npm install
+  - for dir in plugins/*/; do (cd $dir && npm ci); done
+  - npm ci
 node_js:
 - lts/*
 - node
