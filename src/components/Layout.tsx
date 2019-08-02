@@ -22,6 +22,15 @@ export default ({ title, description, children }) => {
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
+          rel="preload"
+          as="style"
+        />
+        <link
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
           rel="stylesheet"
         />
       </Helmet>
