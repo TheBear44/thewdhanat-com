@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "www.thewdhanat.com",
-  "alias": ["www.thewdhanat.com"],
   "scope": "thewdhanat-com",
   "builds": [
     {
