@@ -18,7 +18,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "theme-ui": "^0.2.43",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.4"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
