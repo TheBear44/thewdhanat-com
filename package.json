@@ -10,7 +10,7 @@
     "@types/react-dom": "^16.9.2",
     "@types/react-helmet": "^5.0.11",
     "gatsby": "^2.16.3",
-    "gatsby-plugin-google-analytics": "^2.1.21",
+    "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-theme-ui": "^0.2.43",
     "gatsby-plugin-typescript": "^2.1.15",
