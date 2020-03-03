@@ -31,6 +31,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "now-build": "for dir in plugins/*/; do (cd $dir && npm install); done && npm run build"
   }
 }
