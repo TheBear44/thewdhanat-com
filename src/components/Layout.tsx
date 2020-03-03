@@ -5,7 +5,15 @@ import { Global } from "@emotion/core";
 
 import SEO from "./SEO";
 
-export default ({ title, description, children }) => {
+export default ({
+  title,
+  description,
+  children
+}: {
+  title: string;
+  description?: string;
+  children: React.ReactChild[];
+}) => {
   return (
     <Layout>
       <SEO title={title} description={description} />
@@ -25,10 +33,7 @@ export default ({ title, description, children }) => {
           rel="preload"
           as="style"
         />
-        <link
-          href="https://fonts.gstatic.com"
-          rel="preconnect"
-        />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link
           href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display:700&display=swap"
           rel="stylesheet"

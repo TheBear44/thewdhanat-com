@@ -14,7 +14,6 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-theme-ui",
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-typescript-eslint"
+    "gatsby-plugin-typescript"
   ]
 };
