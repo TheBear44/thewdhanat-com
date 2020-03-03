@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npx now --token $ZEIT_TOKEN -s $ZEIT_SCOPE -n $ZEIT_NAME
+      - run: npx now --token $ZEIT_TOKEN -S $ZEIT_SCOPE -n $ZEIT_NAME
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
           ZEIT_SCOPE: ${{ secrets.ZEIT_SCOPE }}
@@ -32,7 +32,7 @@ jobs:
     needs: [test, deploy]
     steps:
       - uses: actions/checkout@v2
-      - run: npx now --prod --token $ZEIT_TOKEN -s $ZEIT_SCOPE -n $ZEIT_NAME
+      - run: npx now --prod --token $ZEIT_TOKEN -S $ZEIT_SCOPE -n $ZEIT_NAME
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
           ZEIT_SCOPE: ${{ secrets.ZEIT_SCOPE }}
