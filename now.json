@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "name": "www.thewdhanat.com",
-  "scope": "thewdhanat-com",
   "builds": [
     {
       "src": "package.json",
