@@ -25,8 +25,9 @@ jobs:
       - run: now --token $ZEIT_TOKEN -s $ZEIT_SCOPE -n $ZEIT_NAME
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-          ZEIT_SCOPE: ${{ secrets.$ZEIT_SCOPE }}
-          ZEIT_NAME: ${{ secrets.$ZEIT_NAME }}
+          ZEIT_SCOPE: ${{ secrets.ZEIT_SCOPE }}
+          ZEIT_NAME: ${{ secrets.ZEIT_NAME }}
+
   deployToProduction:
     if: github.event_name	== 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
@@ -37,5 +38,5 @@ jobs:
       - run: npm --prod --token $ZEIT_TOKEN -s $ZEIT_SCOPE -n $ZEIT_NAME
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-          ZEIT_SCOPE: ${{ secrets.$ZEIT_SCOPE }}
-          ZEIT_NAME: ${{ secrets.$ZEIT_NAME }}
+          ZEIT_SCOPE: ${{ secrets.ZEIT_SCOPE }}
+          ZEIT_NAME: ${{ secrets.ZEIT_NAME }}
